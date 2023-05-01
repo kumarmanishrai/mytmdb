@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
+import GoToTop from "./components/GoToTop";
 
 function App() {
 
@@ -39,6 +40,8 @@ function App() {
       <Card data={mydata} />
 
       <button onClick={loadData}>{loadButton}</button>
+
+      <GoToTop />
     </div>
   );
 }
