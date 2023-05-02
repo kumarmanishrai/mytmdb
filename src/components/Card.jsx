@@ -10,9 +10,9 @@ const Card = (props) => {
     <div className="card">
       {data.map(item => (
         <div key={item.imdbID} className="item">
-          <img src={item.Poster} alt="" />
-          <h3 className="title">{item.Title}</h3>
-          <h6 className="year">{item.Year}</h6>
+          <img className="poster" src={item.Poster} alt="" />
+          {/* <h2 className="title">{item.Title}</h2>
+          <h4 className="year">{item.Year}</h4> */}
         </div>
       ))}
     </div>
